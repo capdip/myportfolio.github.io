@@ -1,0 +1,541 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+    overflow-y: hidden;
+}
+
+
+/* header */
+.box-color {
+    position: fixed;
+    top: 150px;
+    left: 0;
+
+    z-index: 9999999;
+
+}
+
+.color-itme {
+    background-color: rebeccapurple;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.box-color i {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #666;
+    color: white;
+
+
+}
+
+.colors {
+    background-color: #ded7d7;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+#icon-scrol {
+    font-size: 20px;
+    color: white;
+    position: fixed;
+    bottom: 90px;
+    right: 32px;
+    z-index: 99999;
+    padding: 12px;
+    border: 2px white solid;
+    border-radius: 50%;
+    background-color: black;
+    display: none;
+}
+
+.navbar-toggler {
+    color: #ded7d7 !important;
+    border: #f7f7f7 !important;
+    background-color: #f7f7f7;
+
+}
+
+.navbar-toggler:focus {
+    border: #f7f7f7 !important;
+    box-shadow: #f7f7f7 !important;
+}
+
+.nav-link:hover {
+    color: blueviolet !important;
+}
+
+.icons-home:hover {
+    color: blueviolet !important;
+}
+
+.all-header {
+    background-image: url(../img/bg.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.h-contant {
+
+    background-color: rgba(0, 0, 0, 0.638);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.971);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.h-contant h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 900;
+}
+
+.h-contant h2 {
+    font-size: 40px;
+}
+
+.h-contant i {
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    margin: 4px;
+    background-color: rgba(0, 0, 0, 0.543);
+    color: white;
+    border-radius: 50%;
+
+}
+
+.icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.navbar {
+    z-index: 999;
+    padding: 5px 15px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    font-size: larger;
+    transition: background-color 0.8s;
+
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.caption-spaner {
+    display: flex;
+    justify-content: space-between;
+
+    color: rgb(92, 89, 89);
+}
+
+.caption-spaner .p {
+    color: #666;
+}
+
+.progress {
+    height: 20px;
+}
+
+.progress-bar {
+    background-color: rgba(0, 0, 0, 0.914) !important;
+}
+
+.astr {
+    margin-top: 30px;
+}
+
+.h2-contant-about {
+    font-size: 35px;
+    font-weight: 700;
+
+}
+
+.btn-s {
+
+    margin-top: 45px;
+}
+
+.btn-1 {
+    background-color: black;
+    color: white;
+    padding: 9px 16px !important;
+
+}
+
+.btn-1:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+.btn-2 {
+    background-color: white;
+    color: black;
+    padding: 9px 16px !important;
+
+}
+
+.btn-2:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+/* sec-2 */
+.sec-2 {
+    background-color: #f7f7f7;
+}
+
+.h2-sec2 {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 50px;
+}
+
+.member-s3 {
+
+    text-align: center;
+    background-color: white;
+    padding: 40px 20px;
+    box-shadow: 5px 5px 15px rgb(199, 195, 195);
+}
+
+.member-s3 i {
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: rgb(234, 237, 237);
+    border: rgb(244, 20, 20);
+    transition: 0.5s;
+}
+
+.member-s3:hover i {
+    background-color: black;
+    color: white;
+}
+
+/* sec-3 */
+.h2-sec-3 {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 50px;
+}
+
+.caption-3 {
+    background-color: rgba(255, 255, 255, 0.888);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    border: solid 5px rgba(218, 209, 209, 0.635);
+
+}
+
+.inner:hover .caption-3 {
+    opacity: 1;
+}
+
+.paner {
+    position: relative;
+}
+
+.icon-sec-3 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    padding-top: 7px;
+    padding-left: 2px;
+    color: white;
+    font-size: small;
+    margin-left: 10px;
+
+
+}
+
+.icon-sec-3:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav-item button {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-pills .nav-link.active {
+    background-color: rgb(209, 193, 225);
+    padding: 5px;
+    margin: 0;
+
+}
+
+.h2-feedback {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(210, 98, 233);
+}
+
+.slider {
+    background: linear-gradient(rgb(224, 169, 235), rgb(200, 182, 208), rgb(246, 242, 248));
+}
+
+.counter {
+    font-size: 34px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.821);
+    text-align: center;
+}
+
+.sec-countr {
+    background: linear-gradient(rgba(238, 231, 231, 0.628), rgb(255, 255, 255));
+}
+
+.sec-5-h2 {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 50px;
+}
+
+.Our-Blog {
+    background-color: rgb(241, 236, 236);
+    padding-bottom: 50px;
+}
+
+.caption-product {
+    background-color: white;
+    padding: 10px;
+}
+
+.product1 {
+    margin: 10px;
+
+}
+
+.img-product {
+    overflow: hidden;
+}
+
+.h-img {
+    transition: 0.5s;
+
+}
+
+.h-img:hover {
+
+    transform: scale(1.1);
+}
+
+.h2-conact {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 50px;
+}
+
+.icon-conact {
+    font-size: 27px;
+    color: black;
+    padding: 20px;
+    border-radius: 50%;
+    transition: 0.4s;
+    background-color: rgb(242, 242, 242);
+
+}
+
+.icon-conact:hover {
+    background-color: black;
+    color: white;
+}
+
+.form-control {
+    border: none;
+    background-color: rgb(243, 243, 243);
+
+}
+
+.name:focus {
+    border: 2px solid transparent;
+    box-shadow: none;
+    background-color: rgb(243, 243, 243);
+    border: none;
+}
+
+.form-input {
+    width: 80%;
+    margin: auto;
+}
+
+footer {
+    background-color: rgb(58, 42, 42);
+    color: #ded7d7;
+    text-align: center;
+    padding: 40px;
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    4.9% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    5% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
+}
+
+.laoding {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 99999999999;
+}
+
+.skills {
+    padding: 100px 0;
+    margin: 100px 0;
+    background-color: #f2ebeb;
+}
+
+.prodct-itme {
+    overflow: hidden;
+    border-start-end-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.prodct-itme img {
+    transition: 0.5s;
+}
+
+.prodct-itme:hover img {
+    transform: scale(1.1);
+}
+
+.product-all {
+    margin-left: 60px;
+    
+}
+
+.h5-taps h5 {
+    background-color: rgb(255, 255, 250);
+}
+
+.nav-product {
+    margin: auto !important;
+    background:linear-gradient(rgb(227, 222, 251),rgb(230, 225, 241),rgb(225, 222, 222))  !important;
+    height: 400px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    box-shadow: 5px 5px 25px rgb(222, 209, 209);
+    margin-right:20px;
+    border: #fce9e9d4 solid 2px;
+
+border-radius: 20px;
+}
+.nav-product button{
+    color: black !important;
+}
+.nav-product button:hover{
+    color: rgb(103, 165, 215) !important;
+}
+.btn4:focus{
+
+   padding: 7px 50px !important;
+    background-color: rgb(149, 183, 208) !important;
+    border: none !important;
+
+}
+.btn4{
+    background-color: transparent!important;
+padding-top: 10px;
+
+}
