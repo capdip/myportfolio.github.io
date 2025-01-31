@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=M+PLUS+Rounded+1c:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,500&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,600&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" type="x-icon" href="img/bg.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="favicon_io/favicon-32x32.png" type="image/x-icon">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+   
+#experience {
+  margin-top: 20px; /* Add some top margin for spacing */
+}
+
+/* Style the card-experience class */
+.card-experience {
+  border: 1px solid #ccc; /* Add a border to the class box */
+  border-radius: 10px; /* Add rounded corners to the box */
+  margin-bottom: 20px; /* Add bottom margin for spacing between class boxes */
+}
+
+/* Style the header of each class */
+.card-experience .card-header {
+  background-color: yellow; /* Add yellow background color to the header */
+  padding: 10px; /* Add some padding to the header */
+  border-top-left-radius: 10px; /* Rounded corners for the top-left */
+  border-top-right-radius: 10px; /* Rounded corners for the top-right */
+}
+
+/* Style the title and text in the class */
+.card-experience .card-title,
+.card-experience .card-text {
+  padding: 10px; /* Add some padding to the content */
+}
+/* Add styling to the Experience section */
+#experience {
+  margin-top: 20px; /* Add some top margin for spacing */
+}
+
+
+  /* Add styling to the Experience section */
+  #experience {
+    margin-top: 20px; /* Add some top margin for spacing */
+  }
+
+  /* Style the card-experience class */
+  .card-experience {
+    border: 1px solid #ccc; /* Add a border to the class box */
+    border-radius: 10px; /* Add rounded corners to the box */
+    margin-bottom: 20px; /* Add bottom margin for spacing between class boxes */
+    opacity: 0; /* Initially hide the class boxes */
+    transform: translateY(20px); /* Slide down a bit */
+    transition: opacity 1s, transform 1s;
+  }
+
+  /* Style the header of each class */
+  .card-experience .card-header {
+    background-color: yellow; /* Add yellow background color to the header */
+    padding: 10px; /* Add some padding to the header */
+    border-top-left-radius: 10px; /* Rounded corners for the top-left */
+    border-top-right-radius: 10px; /* Rounded corners for the top-right */
+  }
+
+  /* Style the title and text in the class */
+  .card-experience .card-title,
+  .card-experience .card-text {
+    padding: 10px; /* Add some padding to the content */
+  }
+  /* Define the keyframes for the gradient animation */
+@keyframes gradientText {
+  0% {
+    background-clip: text;
+    color: transparent;
+  }
+  100% {
+    background-clip: text;
+    color: rgb(136, 87, 49); /* End color of the gradient */
+  }
+}
+
+/* Apply the animation to a text element */
+.gradient-text {
+  font-size: 36px;
+  background-image: linear-gradient(45deg, #f06, rgb(16, 206, 16)); /* Define the gradient colors */
+  background-clip: text;
+  -webkit-background-clip: text; /* For older browsers */
+  color: transparent;
+  animation: gradientText 2s ease infinite; /* Apply the animation */
+}
+@keyframes gradientText {
+  0% {
+    background-clip: text;
+    color: transparent;
+  }
+  100% {
+    background-clip: text;
+    color: #f06; /* End color of the gradient */
+  }
+}
+
+/* Apply the animation to a text element */
+.element {
+  font-size: 36px;
+  background-image: linear-gradient(45deg, #f06, #09f); /* Define the gradient colors */
+  background-clip: text;
+  -webkit-background-clip: text; /* For older browsers */
+  color: transparent;
+  animation: gradientText 2s ease infinite; /* Apply the animation */
+}
+
+  </style>
+
+</head>
+
+<body>
+
+  <section class="laoding d-flex justify-content-center align-items-center">
+    <div id="inimat-laod" class="lds-ripple">
+      <div></div>
+      <div></div>
+    </div>
+  </section>
+  <i class="fas fa-circle-arrow-up" id="icon-scrol"></i>
+
+  <div class="box-color d-flex align-items-start">
+
+    <div class="colors">
+      <h4>Choose color:</h4>
+      <div class="color-itme"></div>
+      <div class="color-itme"></div>
+      <div class="color-itme"></div>
+      <div class="color-itme"></div>
+      <div class="color-itme"></div>
+    </div>
+    <i class="fa-solid fa-gear"></i>
+  </div>
+
+
+  <header class="all-header  ">
+    <div class="container ">
+      <nav id="nav-main" class="navbar navbar-expand-lg text-white">
+        <div class="container">
+          <a href="">
+          <h2 class="navbar-brand fs-2 fw-bolder text-white ">Dipes<span class="text-primary fs-2">h</span>  </h2>
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sec-1">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sec-2">Experiences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#intu">My Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sec-6">Contact</a>
+              </li>
+
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <div class="h-contant">
+      <div>
+        <h1 class="gradient-text">Hello</h1>
+        <h2 class="element"></h2>
+        <div class="icons">
+          <a href="https://www.facebook.com/dpezthapa.7" target="new"><i class="fa-brands fa-facebook-f icons-home"></i></a>
+          <a href="https://twitter.com/nepaliphagun" target="new"><i class="fa-brands fa-twitter icons-home"></i></a>
+          <a href="https://www.linkedin.com/in/dipesh-thapa-6b0559215" target="new"><i class="fa-brands fa-linkedin-in icons-home"></i></a>
+          <a href="https://www.youtube.com/@StoryTimesGaming" target="new"><i class="fa-brands fa-youtube icons-home"></i></i></a>
+          <a href="https://www.instagram.com/dipesh_thapa_kazi/" target="new"><i class="fa-brands fa-instagram icons-home"></i></a>
+        </div>
+
+      </div>
+
+    </div>
+    
+  </header>
+  <section id="sec-1" class="sec-1 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 py-5" style="margin-top: -10px;">
+          <div id="imageSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#imageSlider" data-slide-to="0" class="active"></li>
+              <li data-target="#imageSlider" data-slide-to="1"></li>
+              <li data-target="#imageSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/hero.jpg" class="d-block w-100" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/13.jpg" class="d-block w-100" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/14.jpg" class="d-block w-100" alt="Slide 3">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#imageSlider" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#imageSlider" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-md-7 py-4">
+          <h2 class="h2-contant-about">About Me</h2>
+        
+          <h6>MicroBiologist</h6>
+          <p class=" text-muted" style="font-size: 18px;">I am Dipesh Thapa.I am a dedicated and passionate student who is punctual, excellence in performance and who has successfully completed Bachelor's degree in Microbiology. I was born on 5<sup>
+            th</sup> March 1997 in Nepal. My academic journey has equipped me with a strong foundation in bacterial fields, allowing me to explore the intricate world of life sciences. I am driven by a deep curiosity to unravel the mysteries of the biological world and apply my knowledge to contribute to scientific advancements and discoveries. I am excited to embark on the next chapter of my academic and professional journey, eager to make a meaningful impact in the field of microbiology.My professional goal is to use my enthusiasm for scientific inquiry and my analytical abilities to contribute to
+            ground-breaking research and creative solutions in the fast-paced disciplines of microbiology. I want to solve the secrets of microbial life with an emphasis on microbiology to address urgent
+            problems in health and the environment. I hope to lead
+            innovations that close the gap between research and real-world applications through teamwork, bringing about
+            beneficial societal impact.
+            </p>
+          <div>
+            <div class="caption-spaner ">
+              <span>Video and Photo Editing</span>
+              <span class="p">80%</span>
+            </div>
+            <div class="progress  ">
+              <div class="progress-bar " style="width: 80%; " role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="astr">
+            <div class="caption-spaner">
+              <span>Microbiological and Routine Laboratory</span>
+              <span class="p">95%</span>
+            </div>
+            <div class="progress ">
+              <div class="progress-bar  " style="width: 95%; " role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="astr">
+            <div class="caption-spaner">
+              <span>Computer Proficiency in SPSS and MS Office Tools (MS Word,Web Design, MS Powerpoint, MS Excel)</span>
+              <span class="p">85%</span>
+            </div>
+            <div class="progress ">
+              <div class="progress-bar " style="width: 85%; " role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="btn-s">
+           <button class="btn btn-outline-dark p-2 btn-1"><a href="img/MyCv.pdf" style="text-decoration: none; color: rgb(232, 188, 188);" target="new" >Download CV</button></a>
+            <button class="btn btn-outline-dark p-2 btn-2"><a href="#sec-6"style="text-decoration: none; color: pink;">Contact Me</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+  <section id="sec-2" class="sec-2 py-5">
+    <h2 class="h2-sec2 text-center" style="font-size: 32px;">Experiences</h2>
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <div class="member-s3">
+            <i class="fa-solid fa-laptop"></i>
+            <h2 style="font-size: 24px;">Working</h2>
+            <p class="text-muted" style="font-size: 14px;">Working at a molecular level which involves techniques that manipulate and study biological molecules DNA and RNA. Two common techniques used at the molecular level are Polymerase Chain Reaction (PCR) and genomic DNA extraction.</p>
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="member-s3">
+            <i class="fa-solid fa-bullhorn"></i>
+            <h2 style="font-size: 24px;">Knowledge</h2>
+            <p class="text-muted" style="font-size: 14px;">Basis knowledge of Bioinformatics.Bioinformatics is an interdisciplinary field that combines biology, computer science, mathematics, and statistics to analyze and interpret biological data, particularly at the molecular level.</p>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="member-s3">
+            <i class="fa-regular fa-gem"></i>
+            <h2 style="font-size: 24px;">Abilities</h2>
+            <p class="text-muted" style="font-size: 15px;">Excellent analytical and problem-solving abilities.Have the abilities, strengths, and motivation to assume new responsibilities and challenges.Ability to work in a group and can handle large groups.</p>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="member-s3">
+
+
+            <i class="fa-solid fa-umbrella"></i>
+            <h2 style="font-size: 24px;">Communication</h2>
+            <p class="text-muted" style="font-size: 14px;">Strong written and verbal communication.</p>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="member-s3">
+            <i class="fa-solid fa-laptop"></i>
+            <h2 style="font-size: 24px;">Thinking</h2>
+            <p class="text-muted" style="font-size: 14px;">Organized and Logical thinking.</p>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="member-s3">
+
+            <i class="fa-solid fa-camera"></i>
+            <h2 style="font-size: 24px;">Management</h2>
+            <p class="text-muted" style="font-size: 14px;">Time-efficient,Time-Management.</p>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+    </div>
+  </section>
+
+  <section id="sec-3" class="sec-3 py-5">
+    <h2 class="h2-sec-3 py-3 text-center" style="font-size: 36px;">Academic Qualifications</h2>
+    <section id="experience" class="container mt-3 mt-sm-4 mt-lg-5">
+        <div class="card card-experience">
+          <div class="card-header light">Bachelor of Science in
+            Microbiology(General)</div>
+          <div class="card-body">
+            <p class="card-text">College-
+              Balkumari College,
+              Bharatpur
+              <br>
+              University-
+              Tribhuvan University,
+              Nepal
+              <br>
+              Year-
+              2015-2019
+              <br>
+              Result-First Division
+              </p>
+          </div>
+        </div>
+        <div class="card card-experience">
+          <div class="card-header light">Intermediate level (+2
+            Science,Biology+Maths group)
+          </div>
+          <div class="card-body">
+            <p class="card-text">College-
+              Aroma Higher Secondary
+School, Bharatpur- 10
+              <br>
+            Board-
+            Higher Secondary
+            Education Board
+            (HSEB), Nepal
+              <br>
+              Year-
+              2012-2014
+              <br>
+              Result- First Division
+              
+               </p>
+          </div>
+        </div>
+        <div class="card card-experience">
+          <div class="card-header light">School Leaving
+            Certificate (S.L.C.)
+            
+          </div>
+          <div class="card-body">
+            <p class="card-text">School-
+              Small Heaven Model
+School, Bharatpur,
+Chitwan
+              <br>
+              Board-
+              SLC Board, Nepal
+              <br>
+              Year-
+              2012
+              <br>
+              Result- First Division
+              </p>
+          </div>
+        </div>
+  </section>
+  <section id="sec-4" class="feedbak py-5">
+    <h2 class="h2-feedback text-center" style="font-size: 44px;">References</h2>
+    <div class="container slider py-5">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="text-center p-4">Name: Soyuz Baral
+              <br>
+              Assistant Territory Manager
+              <br>
+              Coral Clinical Systems (Tulip Diagnostic)
+              <br>
+              Email: soyuzbaral@gmail.com
+              
+            
+              </p>
+            <div class="coaption-feedback text-center p-4">
+              <p class="text-center p-4">Name: Sunil Bhandari
+                <br>
+                My Undergraduate Supervisor.
+                I have known Mr. Sunil Bhandari since 2015. His vision and insightful guidance during my undergraduate thesis
+                inspired and motivated me to pursue a career in research. His support played a key role in shaping my academic
+                journey and passion for scientic exploration.
+                <br>
+              Email: sunilbhandariv@gmail.com
+                <br>
+                Phone no.: +17014910174 </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="text-center p-4">Name: Sandesh Aryal
+              <br>
+              Assistant Territory Manager
+              <br>
+              Coral Clinical Systems
+              <br>
+              Email : sandesh.aryal@tulipgroup.com
+              <br>
+              Phone no: (+977) 9851188901 </p>
+            <div class="coaption-feedback text-center p-4">
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="text-center p-4">Name: Bisekha Jaiswal
+              <br>
+              Officer Group Of Technical Assurance (GTA)
+              <br>
+             
+              Email: bisekha07@gmail.com 
+              <br>
+              Phone no.: (+977) 9849661070 </p>
+            <div class="coaption-feedback text-center p-4">
+              
+            </div>
+          </div>
+         
+         
+        </div>
+        <div class="carousel-indicators position-static">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+            
+        </div>
+
+      </div>
+    </div>
+    <br><br>
+
+  </section>
+
+ <section id="sec-5" class="Our-Blog py-5 mb-5">
+    <h2 class="sec-5-h2 text-center">HOBBIES</h2>
+    <div class="container w-75">
+      <div class="owl-carousel  mx-auto ">
+
+        <div class="product1">
+
+          <div class="img-product">
+            <div class="h-img">
+              <img src="img/1 (1).jpg" class="w-100" alt="Research">
+            </div>
+          </div>
+          <div class="caption-product">
+            <p class="text-muted">Research</p>
+            <h3>Research
+              articles fuel my curiosity. </h3>
+            
+          </div>
+
+
+        </div>
+        <div class="product1">
+
+          <div class="img-product">
+            <div class="h-img">
+              <img src="img/2 (1).jpg" class="w-100" alt="Music">
+            </div>
+          </div>
+          <div class="caption-product">
+            <p class="text-muted">Listening Musics</p>
+            <h3 style="font-size: 30px;"> Listening Music smoothes my soul.</h3>
+            
+          </div>
+
+
+        </div>
+        <div class="product1">
+
+          <div class="img-product">
+            <div class="h-img">
+              <img src="img/3 (1).jpg" class="w-100" alt="Novel">
+            </div>
+          </div>
+          <div class="caption-product">
+            <p class="text-muted">Reading</p>
+            <h3 style="font-size: 34px;">Reading novel worlds captivate my imaginations. </h3>
+           
+          </div>
+
+
+        </div>
+        <div class="product1">
+
+          <div class="img-product">
+            <div class="h-img">
+              <img src="img/4 (1).jpg" class="w-100" alt="Sketching">
+            </div>
+          </div>
+          <div class="caption-product">
+            <p class="text-muted">Sketching</p>
+            <h3 style="font-size: 29px;">Sketching lets me channel emotions
+              creatively. </h3>
+            
+          </div>
+
+
+        </div>
+        <div class="product1">
+
+          <div class="img-product">
+            <div class="h-img">
+              <img src="img/3.jpg" class="w-100" alt="Charity">
+            </div>
+          </div>
+          <div class="caption-product">
+            <p class="text-muted">Charity Works</p>
+            <h3 style="font-size: 24.1px;">Charity work hones my interpersonal skills, while time management is my forte.  </h3>
+           
+          </div>
+
+
+        </div>
+        <div class="product1">
+
+          <div class="img-product">
+            <div class="h-img">
+              <img src="img/4.jpg" class="w-100" alt="Sports">
+            </div>
+          </div>
+          <div class="caption-product">
+            <p class="text-muted">Sports</p>
+            <h3 style="font-size: 25.2px;"> Sports like
+              Badminton, Volleyball, and Football ignite my competitive spirit. </h3>
+          
+          </div>
+
+
+        </div>
+        <div class="product1">
+
+          <div class="img-product">
+            <div class="h-img">
+              <img src="img/5.jpg" class="w-100" alt="Leadership">
+            </div>
+          </div>
+          <div class="caption-product">
+            <p class="text-muted">Leadership</p>
+            <h3 style="font-size: 21.3px;">Former eco club VP, I'm committed
+              to growth through leadership. </h3>
+            
+          </div>
+
+
+        </div>
+       
+
+
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="intu" class="skills">
+    <h2 class="h2-conact text-center" style="font-size: 44px;">My Works</h2>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <div class="d-flex align-items-start nav-product">
+            <div class="nav py-5 mt-5 flex-column nav-pills me-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link btn4 active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">PARTICIPATION IN SEMINARS AND TRAINING</button>
+              <button class="nav-link btn4" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">INTERNSHIP AND JOB</button>
+              <button class="nav-link btn4" id="v-pills-messages-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                aria-selected="false">RESEARCH WORK</button>
+                <button class="nav-link btn4" id="v-pills-settings-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                aria-selected="false"> CONFERENCE AND SOCIAL ACTIVITIES PARTICIPATION
+</button>
+                
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-8 mb-2 m-auto">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              <div class="row h5-taps gy-3 gx-3">
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="prodct-itme">
+                   
+                  </div>
+                  <h5 class="text-center p-3" style="font-size: 30px; font-weight: lighter;"> One-day seminar on “Drug Discovery and Metabolomics”</h5>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="prodct-itme">
+                   
+                  </div>
+                  <h5 class="text-center p-3"> Participation in two-day workshop called digital marketing held on 15th and 16th October 2022
+                    organized by RPA Academy. </h5>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="prodct-itme">
+                  
+                  </div>
+                  <h5 class="text-center p-3" style="font-size: 17px;">Completed one-day “Proposal Writing and Poster Preparation” conducted on 9th September 2017
+                    organized by Balkumari College, Narayangarh, Chitwan, Nepal.
+                    </h5>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="prodct-itme">
+                   
+                  </div>
+                  <h5 class="text-center p-3">Completed one-week training & workshop from 8th to 12th January 2019 at Shardanagar (Baramati),
+                    India under International Student Exchange Program (ISEP) on Bacterial Identification, Bio-Inoculant
+                    Production Technology, and Molecular Biology Techniques.</h5>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="prodct-itme">
+                  
+                  </div>
+                  <h5 class="text-center p-3" style="font-size: 22px;"> Completed 84 hours of course on proficiency in web design (fundamentals of internet, HTML,
+                    Macromedia Flash, Macromedia Dreamweaver, Adobe Photoshop CS2 & web hosting) in June 2012
+                    from Heartsun Technology Pvt. Ltd.</h5>
+                </div>
+               
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <div class="row gy-3 gx-3 h5-taps">
+              <div class="col-lg-4 col-md-6">
+                <div class="prodct-itme">
+                 
+                </div>
+                <h5 class="text-center p-3" style="font-size: 23px; margin-bottom: 150px;"> Research assistant at Group for Technical Assistance, Kathmandu (2023) for cholera vaccination camp.</h5>
+              </div>
+              <div class="col-lg-4 col-md-6" style="margin-left:100px;">
+                <div class="prodct-itme">
+                 
+                </div>
+                <h5 class="text-center p-3"> Internship at United Beverage Pvt. Ltd, Chitwan in the quality control department and production
+                  departments of the RTS beverage plant for 45 days in 2019.
+                   </h5>
+              </div>
+              <div class="col-lg-4 col-md-6">
+               
+                <h5 class="text-center p-3">  Internship at Deepjyoti Pathology Laboratory for 6 months in 2022 </h5>
+              
+              </div>
+              <div class="col-lg-4 col-md-6">
+                
+                <h5 class="text-center p-3"> Internship at Pokhara Natural Food And Beverage Private Limated In water quality analysis and microbial research
+                  projects for 3 months in 2023 </h5>
+              </div>
+              
+            </div>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <div class="row h5-taps gy-3 gx-3">
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="prodct-itme">
+           
+                  </div>
+                  <h5 class="text-center p-3" style="margin-bottom: 180px;"> A case study on lesbian, gay, bisexual, and transgender people in Bharatpur metropolitan, 2017.</h5>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="prodct-itme">
+                
+                  </div>
+                  <h5 class="text-center p-3" style="font-size: 17.4px; margin-top: -6px;"> Isolation of Trichoderma from soil from different places in Nepal and observation of their antimicrobial
+                    characteristics, 2018.
+                     </h5>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="prodct-itme">
+               
+                  </div>
+                  <h5 class="text-center p-3"> Isolation of Phosphate solubilizing bacteria (PSB) from different altitudes of Nepal. </h5>
+                </div>
+                <!-- <div class="col-lg-4 col-md-6">
+                  <div class="prodct-itme">
+                    
+                  </div>
+                  <h5 class="text-center p-3"> </h5>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="prodct-itme">
+                    
+                  </div>
+                  <h5 class="text-center p-3"> </h5>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="prodct-itme">
+              
+                  </div>
+                  <h5 class="text-center p-3">  </h5>
+                </div> -->
+                
+              </div>
+            </div>
+            
+            
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+              <div class="row gy-3 gx-3  h5-taps">
+              <div class="col-lg-4 col-md-6">
+                <div class="prodct-itme">
+            
+                </div>
+                <h5 class="text-center p-3" style="font-size: 29px;"> Member of the American Society of Microbiology (ASM) for 2023 AD.</h5>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="prodct-itme">
+           
+                </div>
+                <h5 class="text-center p-3" style="font-size: 16px;"> General participation in an international conference on “biotechnological revolution in environmental,
+                  agricultural technologies and healthcare (BREATH) organized by the biotechnology society of Nepal
+                  (BSN) held from 12th to 14th Feb 2021.
+                  </h5>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="prodct-itme">
+               
+                </div>
+                <h5 class="text-center p-3">Participation in a one-day seminar entitled “Student Motivation” held on 27th June 2015 held by Microbiology Department, Balkumari College, Chitwan, Nepal. </h5>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="prodct-itme">
+                
+                </div>
+                <h5 class="text-center p-3" style="font-size: 18px;"> Participation in an Awareness program entitled “Swine Flu and Its Preventive Measure” conducted on
+                  1st April 2015 by Microbiology Department, Balkumari College, Chitwan, Nepal.
+                  </h5>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="prodct-itme">
+                  
+                  </div>
+                  <h5 class="text-center p-3" style="font-size: 18px;"> Participation in "Karyakram -2012" a Professional Event Management workshop on 8th September
+                    2012 organized by the Management Students Association of Nepal (MSAN).
+                    
+                    </h5>
+                  
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="prodct-itme">
+                  
+                  </div>
+                  <h5 class="text-center p-3" style="font-size: 18px;"> Participation in an awareness program entitled “Health Awareness & Health Appliance Distribution
+                     Program” conducted on 26th March 2016 organized by Rotaract Club of Ratnanagar at Kalika-4,
+                     latauli, Chitwan.
+                     </h5> 
+                  
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="prodct-itme">
+                    
+                    </div>
+                    <h5 class="text-center p-3" style="font-size: 28px;">  Participation in the volunteer program of men’s room reloaded on 2015.
+                      </h5> 
+                   
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="prodct-itme">
+                      
+                      </div>
+                      <h5 class="text-center p-3"> Participation in a national-wide cleanup event held on 16th September 2017 at Narayani river bank,
+                        Chitwan conducted by Clean-up Nepal. 
+                        </h5> 
+                     
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="prodct-itme">
+                        
+                        </div>
+                        <h5 class="text-center p-3" style="font-size: 16px;"> Participation in an international seminar entitled on opportunities & Impact of Microbiology in Health
+                          & Environment, organized by Balkumari, college, Chitwan in association with the microbiology
+                          society, India held on 28th July 2018.
+                          </h5> 
+                       
+                        </div>
+                            <h5 class="text-center p-3"> Participating in Mastering lab accuracy through control & calibration in diagnostic laboratories organized by
+                              Tulip Diagnostics (P) Ltd. On April 6th 2024 and many more social activities are done by me.
+                              </h5>
+             
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="sec-6" class="conact py-5 mt-5">
+    <h2 class="h2-conact text-center">Contact Me</h2>
+
+
+
+    <div class="container">
+      <div class="row form-input mb-5">
+        <div class="col-md-4 text-center ">
+          <i class="fa-solid fa-location-arrow icon-conact"></i>
+          <h4>Address</h4>
+          <p class="text-muted">Bharatpur-10, Chitwan, Nepal.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="fa-solid fa-envelope icon-conact"></i>
+          <h4>Email</h4>
+          <p class="text-muted">tdipesh861@gmail.com</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="fa-solid fa-phone icon-conact"></i>
+          <h4>Phone</h4>
+          <p class="text-muted">+977-9845585848/+977-9821288310</p>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <form id="contact-form">
+            <div class="row form-input">
+                <div class="col-md-7">
+                    <div class="mb-3">
+                        <input type="text" class="form-control name" id="exampleFormControlInput1" placeholder="Name" required>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="mb-3">
+                        <input type="email" class="form-control email" id="exampleFormControlInput2" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control message mb-5" rows="10" id="exampleFormControlInput3" placeholder="Message" required></textarea>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit" style="margin-left: 40vw;">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    </div>
+  </section>
+  </section>
+  
+  <footer>
+    <p>&copy; <span id="year"></span> Copyrights Dipesh Thapa All Rights Reserved.</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $('#year').html(new Date().getFullYear());
+</script>
+<script>
+    const experienceCards = document.querySelectorAll('.card-experience');
+  
+  function handleIntersection(entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3
+  };
+
+  const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+  experienceCards.forEach((card) => {
+    observer.observe(card);
+  });
+</script>
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent the form from actually submitting
+
+      // Check if all fields are filled
+      const name = document.querySelector(".name").value;
+      const email = document.querySelector(".email").value;
+      const message = document.querySelector(".message").value;
+
+      // if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+      //     alert("Please fill in all fields.");
+      //     return;
+      // }
+
+      // If all fields are filled, display a thank you message
+      alert("Thanks for contacting!");
+
+      // Reload the page after the alert is closed
+      setTimeout(function () {
+         location.reload();
+      }, 1000); // Reload after 1 second
+  });
+  
+</script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/darkmode-js.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
